@@ -1,4 +1,8 @@
-# Directord Homebrew Formula
+# Directord Homebrew Tap
+
+## What is this?
+
+This is a Homebrew tap for [Directord](https://directord.com).
 
 ## How do I install this formula?
 
