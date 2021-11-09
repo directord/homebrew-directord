@@ -3,13 +3,13 @@ class Directord < Formula
 
   desc "System cluster management focusing on operations and orchestration"
   homepage "https://directord.com"
-  url "https://github.com/cloudnull/directord/releases/download/0.7.3/directord-0.7.3.tar.gz"
-  sha256 "a0ed3f67546014aefe5b94a0060d61c8e710097f00746893ecd3d69c81f118f0"
+  url "https://github.com/directord/directord/releases/download/0.11.0/directord-0.11.0.tar.gz"
+  sha256 "2ed2988092f8448773ba6d00c61c326d3e63e9755ed26581b57d193a68353a3a"
   license "Apache-2.0"
-  head "https://github.com/cloudnull/directord.git"
+  head "https://github.com/directord/directord.git"
 
-  depends_on "cmake" # required for ssh2-python
-  depends_on "libssh2" # required for ssh2-python
+  depends_on "cmake" # required for ssh-python
+  depends_on "libssh" # required for ssh-python
   depends_on "python@3.9"
 
   resource "diskcache" do
@@ -37,9 +37,9 @@ class Directord < Formula
     sha256 "6d18c76676771fd891ca8e0e68da0bbfb88e30129835c0ade748016adb3b6242"
   end
 
-  resource "ssh2-python" do
-    url "https://files.pythonhosted.org/packages/c5/02/2defa9ea61d67d5e20f2753238860975de77c8585f8972b52f78fae9f0d2/ssh2-python-0.26.0.tar.gz"
-    sha256 "f8551291c112d2bc99bd1a8fe1158c1e89f615207dc34ab616ad395dffcf949e"
+  resource "ssh-python" do
+    url "https://files.pythonhosted.org/packages/6a/03/effeac5cabc2ba741cebff75de43ae46002469960e4701e321ff8ffe6892/ssh-python-0.9.0.tar.gz"
+    sha256 "f38778d40820d068e7b80ebabfb52bd5ff9b480a3b4c350fb6ab59c11886a96a"
   end
 
   resource "tabulate" do
